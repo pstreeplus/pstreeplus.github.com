@@ -1,2 +1,0 @@
-uglyname.github.com
-===================
