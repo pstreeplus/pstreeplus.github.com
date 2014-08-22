@@ -9,7 +9,7 @@ atom-baseurl: "http://uglyname.github.io/"
 disqus: "gopherwood"
 
 navigations:
-  - title: Archive
+  - title: Wangzhili's Blog
     class: fa fa-list-ul
     href: /archive.html
   - title: Tags
