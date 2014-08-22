@@ -37,6 +37,6 @@ layout: default
   </ul>
   <div class="divider"></div>
   <ul class="listing main-listing">
-    <br><br><br><li class="listing-seperator"><a href="/archive.html">Read More Article >></a></li>
+    <br><br><br><li class="listing-seperator"><a href="/archive.html">Read More ...</a></li>
   </ul>
 </div>
