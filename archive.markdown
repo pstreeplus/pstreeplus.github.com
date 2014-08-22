@@ -1,5 +1,5 @@
 ---
-title:  Blogs
+title:  Lists
 layout: page
 ---
 
