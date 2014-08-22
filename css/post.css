@@ -1,0 +1,61 @@
+.post pre {
+    overflow: auto;
+    border: 1px solid #AABDB4;
+    background-color: #FFFFFF;
+    padding: 0 .4em;
+}
+pre {
+    overflow: auto;
+}
+
+.post ul, .post ol {
+    margin-left: 1.35em;
+}
+
+.post code {
+    border: 1px solid #FFFFFF;
+    background-color: #FFFFFF;
+    padding: 0 .2em;
+}
+
+.post pre code {
+    border: none;
+}
+
+/* terminal */
+.post pre.terminal {
+    border: 1px solid #000;
+    background-color: #B3Ad9B;
+    color: #FFF;
+}
+
+.post pre.terminal code {
+    background-color: #FFFFFF;
+}
+
+.date {
+    width: 100%;
+    overflow: hidden;
+    border-bottom: 1px solid #000;
+    margin-bottom: 4em;
+}
+
+.meta {
+    font-size: small;
+    width: 8em;
+    float: right;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+.comment {
+    margin-top: 4em;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+.ic {
+    margin: 1em 2em auto;
+}

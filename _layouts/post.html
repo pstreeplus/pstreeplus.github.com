@@ -1,48 +1,23 @@
 ---
 layout: default
 ---
+<link rel="stylesheet" type="text/css" href="/css/post.css" />
 
-<article>
-    <section class="title">
-        <h2>{{ page.title }} </h2>
-    </section>
-    <section class="meta">
-        <span class="time">
-            <time datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date:"%Y-%m-%d" }}</time>
-        </span>
-        <span
-            class           = "like-wrapper"
-            like-shortname  = '{{ site.disqus }}'
-            like-identifier = '{{ page.guid }}'
-            like-name       = '{{ page.title }}'
-            like-btn        = '&#xf087;'
-            like-link       = '{{ site.atom-baseurl }}{{ page.url }}'
-            ></span>
-        <script type="text/javascript">
-var l = document.createElement('script');
-l.type = 'text/javascript'; l.async = true; l.src = 'http://www.like-btn.com/javascript/widget.js';
-(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(l);
-        </script>
-    </section>
-    <section class="post">
-        {{ content }}
-    </section>
-    {% if page.guid %}
-    <div class="divider">
-        <span>
-            {% if page.previous %}
-            <a href="{{ page.previous.url }}"><i class="fa fa-chevron-left"></i></a>
-            {% else %}
-            <i class="fa fa-circle"></i>
-            {% endif %}
-        </span>
-        <span>
-            {% if page.next %}
-            <a href="{{ page.next.url }}"><i class="fa fa-chevron-right"></i></a>
-            {% else %}
-            <i class="fa fa-circle"></i>
-            {% endif %}
-        </span>
-    </div>
-    {% endif %}
-</article>
+<h1>{{ page.title }}</h1>
+<div class="date"><p class="meta">{{ page.date | date_to_string }}</p></div>
+
+<div class="post">
+    {{ content }}
+</div>
+
+<div class="post comment">
+    <a><i class="fa fa-comment-o ic" id="icomment"></i></a>
+    <a><i class="fa fa-share-square-o ic" id="ishare"></i></a>
+    <a href="mailto:liaotonglang@gmail.com?subject=from_pages"><i class="fa fa-envelope-o ic"></i></a>
+</div>
+
+<div class="post" id="hico">
+    <div id="disqus_thread"></div>
+    <script src="/js/post.js"></script>
+    <noscript>Please enable JavaScript to view the comments.</a></noscript>
+</div>

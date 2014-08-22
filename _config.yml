@@ -1,11 +1,6 @@
-markdown: rdiscount
+name: quant67
+markdown: redcarpet
 pygments: true
-permalink: /:year/:month/:day/:title.html
-name: "Unruly"
-markdown: rdiscount
 
-author: "wanghzili"
-atom-baseurl: "http://uglyname.github.io/"
-disqus: "gopherwood"
-
+permalink:   /:categories/:title
 

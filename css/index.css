@@ -1,0 +1,29 @@
+.posts {
+    list-style-type: none;
+    float: left;
+    padding-left: 0px;
+}
+.posts li {
+    line-height: 1.75em;
+}
+.date {
+    color: #AABDB4;
+    font-size: small;
+    display:inline-block;
+    width: 11em;
+    float: left;
+}
+.IndexP {
+    margin-bottom: 2em;
+    margin-top: 2em;
+    border-bottom: 1px solid #000;
+    padding-bottom: 2.7em;
+}
+h1 {
+    font-size: 20px;
+}
+.ContinueRead {
+    display:inline-block;
+    float: right;
+}
+
