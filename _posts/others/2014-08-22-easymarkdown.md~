@@ -7,23 +7,4 @@ layout: post
 
 比如要写个名为`test`的文件，你必须以2014-08-22(year-month-day)的形式来命名，这样就显得有点麻烦。为了简化操作，我们可以自己下个脚本或者写个小程序来自动帮你完成这些乏味的操作，这样我们只需要关注重点即可。
 
-```CPP
-#include<ctime>
-#include<cstdio>
-#include<cstring>
-#include<cstdlib>
-#include<fstream>
-using namespace std;
-int main(int agrc,char **argv){
-    time_t t = time(0);
-    tm* ymd = localtime(&t);
-    char cmd[100],filename[100];
-    sprintf(cmd,"gvim %d-%02d-%02d-%s.md",ymd->tm_year+1900,ymd->tm_mon+1,ymd->tm_mday,argv[1]);
-    sprintf(filename,"%d-%02d-%02d-%s.md",ymd->tm_year+1900,ymd->tm_mon+1,ymd->tm_mday,argv[1]);
-    ofstream ff;
-    ff.open(filename);
-    ff << "---\ntitle: " << argv[1] << "\nlayout: post\n\n---\n\n";
-    system(cmd);
-    return 0;
-}
-```
+
