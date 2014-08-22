@@ -1,6 +1,8 @@
 ---
 title: 简化Jekyll的操作
 layout: post
+tags: [others]
+category: others
 ---
 
 使用`Jekyll`生成github page时，文件命名必须符合它的规范，它可以把你用`markdown`标记语言写的md文件动态的解析成html文本，用于生成轻量级Blog.
