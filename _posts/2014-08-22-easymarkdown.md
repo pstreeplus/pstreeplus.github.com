@@ -1,29 +1,35 @@
 ---
-title: 简化markdown + Jekyll的操作
-layout: post
+layout : post
+category : 技术
+title : VIM粘贴板小结
+tags : [vim, work, code]
 ---
 
-使用`Jekyll`生成github page时，文件命名必须符合它的规范，它可以把你用`markdown`标记语言写的md文件动态的解析成html文本，用于生成轻量级Blog.
+一直用vim，落伍的人用落伍的文本编辑器啊。
 
-比如要写个名为`test`的文件，你必须以2014-08-22(year-month-day)的形式来命名，这样就显得有点麻烦。为了简化操作，我们可以自己下个脚本或者写个小程序来自动帮你完成这些乏味的操作，这样我们只需要关注重点即可。
+![vim picture](http://quant67.github.io/assets/vim/001.png)
 
-```CPP
-#include<ctime>
-#include<cstdio>
-#include<cstring>
-#include<cstdlib>
-#include<fstream>
-using namespace std;
-int main(int agrc,char **argv){
-    time_t t = time(0);
-    tm* ymd = localtime(&t);
-    char cmd[100],filename[100];
-    sprintf(cmd,"gvim %d-%02d-%02d-%s.md",ymd->tm_year+1900,ymd->tm_mon+1,ymd->tm_mday,argv[1]);
-    sprintf(filename,"%d-%02d-%02d-%s.md",ymd->tm_year+1900,ymd->tm_mon+1,ymd->tm_mday,argv[1]);
-    ofstream ff;
-    ff.open(filename);
-    ff << "---\ntitle: " << argv[1] << "\nlayout: post\n\n---\n\n";
-    system(cmd);
-    return 0;
-}
-```
+vim的粘贴板一直很让我蛋疼，早上又是翻文档又是上网查终于明白了，贴出来共享了。
+
+- 先说系统粘贴板
+
+从vim拷贝到系统粘贴板：`"+y` 
+
+从系统粘贴板拷贝到vim：`"+p` 或者 `Shift + insert`
+
+---
+- 好了，粘贴板
+
+vim里面， 系统粘贴板跟`+`寄存器是关联的，所以你对寄存器`+`的任何复制和粘贴都直接影响到系统粘贴板。vim有12个粘贴板(在我的机器上试了一下，不止12个，任何字母都可以作为粘贴板的表示)，分别是0、1、2、3、4、5、6、7、8、9、a、"、+;用`:reg`命令可以查看各个粘贴板里的内容。
+
+要将vim的内容复制到某个粘贴板，需要进入`normal`模式，选择内容，按`"Ny`完成复制，其中`N`是粘贴板号，例如把内容复制到粘贴板`a`，选中内容后按`"ay`就可以了。有几点需要注意：
+
+`"`号粘贴板（临时粘贴板）直接按`y`就复制了，直接按`p`就粘贴了。
+
+`+`号粘贴板是系统粘贴板，用`"+y`将内容复制到粘贴板后可以使用`Ctrl+V`将其粘贴到其它文档（如gedit、firefox）中，同理，要在其它地方用`Ctrl+C`或者右键复制的内容复制到vim中，需要在`normal`模式下按`"+p`。
+
+要将vim某个粘贴板的内容粘贴进来，需要进入`normal`模式，按下`"Np`，其中·`N`是粘贴板号。
+
+注意：vim.gtk或vim.gnome才能使用系统全局粘贴板，默认的vim.basic是看不到`+`号寄存器的。
+
+
