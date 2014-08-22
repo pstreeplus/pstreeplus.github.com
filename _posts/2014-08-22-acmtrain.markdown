@@ -1,0 +1,6 @@
+---
+tilte 'acm train'
+layout: posy
+
+---
+这个暑假培训acm新人，这里是我用的课件<a href = "/ACM/dp_and_search.pdf">课件下载</a>
