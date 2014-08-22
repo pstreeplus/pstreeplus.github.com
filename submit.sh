@@ -1,4 +1,3 @@
-cd ..
 git add --all
 git status
 sleep 2
