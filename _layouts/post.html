@@ -23,8 +23,6 @@ var l = document.createElement('script');
 l.type = 'text/javascript'; l.async = true; l.src = 'http://www.like-btn.com/javascript/widget.js';
 (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(l);
         </script>
-        <!-- END this would not work on any other domain -->
-        {% endif %}
     </section>
     <section class="post">
         {{ content }}
@@ -46,6 +44,5 @@ l.type = 'text/javascript'; l.async = true; l.src = 'http://www.like-btn.com/jav
             {% endif %}
         </span>
     </div>
-
     {% endif %}
 </article>
