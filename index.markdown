@@ -13,13 +13,6 @@ layout: default
     <span class="time">
       <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
     </span>
-    {% if post.tags %}
-    <span class="tags">
-      {% for tag in post.tags %}
-      <a href="/tags.html#{{ tag }}" title="{{ tag }}">#{{ tag }}</a>
-      {% endfor %}
-    </span>
-    {% endif %}
     <!-- BEGIN this would not work on any other domain -->
     <span
       class           = 'like-wrapper'
