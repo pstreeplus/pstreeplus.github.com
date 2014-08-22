@@ -17,10 +17,10 @@ navigations:
     href: /tags.html
   - title: About
     class: fa fa-user
-    href:  http://uglyname.github.io/ 
+    href:  https://github.com/uglyname/uglyname.github.com 
   - title: Gallery
     class: fa fa-film
-    href: http://uglyname.github.io/ 
+    href:  http://uglyname.github.io/ 
   - title: Blogroll
     class: fa fa-link
     href: /links.html
