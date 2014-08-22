@@ -38,10 +38,12 @@ tags:
 
 然后编译驱动
 
-    cd orinoco
+<pre>
+cd orinoco
 
-    make
+make
 
+</pre>
 编译正确完成后需要安装
 
     sudo make install
