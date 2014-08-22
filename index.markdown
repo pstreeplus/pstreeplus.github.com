@@ -48,6 +48,6 @@ layout: default
       <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
     </li>
   {% endfor %}
-    <br><br><br><li class="listing-seperator"><a href="/archive.html">Read More >></a></li>
+    <br><br><br><li class="listing-seperator"><a href="/archive.html">Read More Article >></a></li>
   </ul>
 </div>
