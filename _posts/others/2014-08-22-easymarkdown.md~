@@ -1,7 +1,6 @@
 ---
 layout: post
-title: 布莱叶盲文1
-description: "和盲人的交流出现了一些障碍，所以我去学了盲文。这个笔记只适用于布莱叶盲文系统，不包含汉文盲文。"
+title: fuck
 tags: [others]
 category: others
 ---
