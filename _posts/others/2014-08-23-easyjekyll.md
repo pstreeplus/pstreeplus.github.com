@@ -3,7 +3,7 @@ title: 简化markdown + Jekyll的操作
 layout: post
 ---
 
-使用`Jekyll`生成github page时，文件命名必须符合它的规范，它可以把你用`markdown`标记语言写的md文件动态的解析成html文本，用于生成轻量级Blog.
+使用`Jekyll`生成`github page`时，文件命名必须符合它的规范，它可以把你用`markdown`标记语言写的`md`文件动态的解析成`html`文本，用于生成轻量级`Blog`。
 
 比如要写个名为`test`的文件，你必须以`2014-08-22(year-month-day)`的形式来命名，这样就显得有点麻烦。为了简化操作，我们可以自己写个脚本或者写个小程序来自动帮你完成这些乏味的操作，把精力放在有意义的事情上。
 
