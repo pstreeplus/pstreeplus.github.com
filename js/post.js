@@ -1,6 +1,6 @@
 $('#icomment').click(function(){
         /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-        var disqus_shortname = 'quant67'; // required: replace example with your forum shortname
+        var disqus_shortname = 'Wang Zhi Li'; // required: replace example with your forum shortname
 
         /* * * DON'T EDIT BELOW THIS LINE * * */
         (function() {
