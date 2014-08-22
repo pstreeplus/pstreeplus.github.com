@@ -1,0 +1,13 @@
+---
+title: testcpp
+layout: post
+
+---
+
+```cpp
+#include<cstdio>
+int main(){
+    printf("Hello world!\n");
+    return 0;
+}
+```
