@@ -10,12 +10,6 @@ layout: default
   <span class="time">
     <time datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date:"%Y-%m-%d" }}</time>
   </span>
-  {% if page.tags %}
-  <span class="tags">
-    {% for tag in page.tags %}
-    <a href="/tags.html#{{ tag }}" title="{{ tag }}">#{{ tag }}</a>
-    {% endfor %}
-  </span>
   <!-- BEGIN this would not work on any other domain -->
   <span
     class           = "like-wrapper"
