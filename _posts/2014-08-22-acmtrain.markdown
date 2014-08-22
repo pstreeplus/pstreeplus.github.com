@@ -1,6 +1,6 @@
 ---
 tilte 'acm train'
-layout: posy
+layout: post
 
 ---
 
