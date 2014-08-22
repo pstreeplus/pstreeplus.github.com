@@ -1,0 +1,30 @@
+markdown: rdiscount
+pygments: true
+permalink: /:year/:month/:day/:title.html
+name: "”Ó÷Êµƒ«Ÿœ“"
+markdown: rdiscount
+
+author: "wanghzili"
+atom-baseurl: "http://uglyname.github.io/"
+disqus: "gopherwood"
+
+navigations:
+  - title: Blog Lists
+    class: fa fa-list-ul
+    href: /archive.html
+  - title: Tags
+    class: fa fa-tags
+    href: /tags.html
+  - title: About
+    class: fa fa-user
+    href:  https://github.com/uglyname/uglyname.github.com 
+  - title: Gallery
+    class: fa fa-film
+    href:  http://uglyname.github.io/ 
+  - title: Blogroll
+    class: fa fa-link
+    href: /links.html
+  - title: Subscribe
+    class: fa fa-rss
+    href: /atom.xml
+
