@@ -1,7 +1,7 @@
 markdown: rdiscount
 pygments: true
 permalink: /:year/:month/:day/:title.html
-name: "wangzhili's blog"
+name: "”Ó÷Êµƒ«Ÿœ“"
 markdown: rdiscount
 
 author: "wanghzili"
@@ -9,7 +9,7 @@ atom-baseurl: "http://uglyname.github.io/"
 disqus: "gopherwood"
 
 navigations:
-  - title: Wangzhili's Blog
+  - title: Blog Lists
     class: fa fa-list-ul
     href: /archive.html
   - title: Tags
