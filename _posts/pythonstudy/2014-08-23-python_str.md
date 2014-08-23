@@ -78,7 +78,7 @@ S.split('XX')           # ['aa','Xbb','Xcc','X']
 ```python
 S = "abcdaaSS"
 S.repalce("b",'f')     # "afcdaaSS"
-
+```
 ##6.`join()`
 
 >与`split()`相反，它把多个字符串连接在一起，返回一个字符串。
@@ -87,18 +87,18 @@ S.repalce("b",'f')     # "afcdaaSS"
 L = ['aa','bb','cc']
 ','.join(L)           # "aa,bb,cc"
 '|'.join(L)           # "aa|bb|cc"
-
+```
 >join()参数需要一个字符序列，如果要出传递的一系列整数，会怎样呢？
 ```python
 L = range(10)
 ','.join(L) 
 # "exception.TypeError"
-
->因此需要将L中的数子转换成字符串
 ```
+>因此需要将L中的数子转换成字符串
+```python
 ','.join([str[i] for i in L])
 # '0,1,2,3,4,5,6,7,8,9'
-
+```
 
 ##总结
 
