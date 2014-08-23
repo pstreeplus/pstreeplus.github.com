@@ -19,15 +19,15 @@ layout: post
 
 ```python
 S = 'this is a str'
-find('is')          #value is 2
-index('is')         #value also is 2
-find('no')          #value is -1
-index('no')         tion.ValueError
+S.find('is')          #value is 2
+S.index('is')         #value also is 2
+S.find('no')          #value is -1
+S.index('no')         tion.ValueError
 ```
 
 ##2.`lstrip()`,`rstrip()`,`strip()`
 
->如果不带任何参数，`lstrip()`,`rstrip()`,`strip()`分别会删除前导空白字符，结尾空白字符，和前后空白字符`(tab,enter,space...)`,它们的返回值都是处理后的字符串。如果带参数，那么它们会##删除参数中字符的任意组合，只要这个组合存在函数作用的位置上##。为了看情这一点，我们来看个例子：
+>如果不带任何参数，`lstrip()`,`rstrip()`,`strip()`分别会删除前导空白字符，结尾空白字符，和前后空白字符`(tab,enter,space...)`,它们的返回值都是处理后的字符串。如果带参数，那么它们会**删除参数中字符的任意组合，只要这个组合存在函数作用的位置上**。为了看情这一点，我们来看个例子：
 
 ```python
 S = "<this is s str>"
@@ -105,4 +105,4 @@ L = range(10)
 
 ##总结
 
->学习这些很零碎的知识点关键是多加练习，另外还有一点就是，学习函数，一定要记清楚它们的参数以及##返回值##。
+>学习这些很零碎的知识点关键是多加练习，另外还有一点就是，学习函数，一定要记清楚它们的参数以及**返回值**。
