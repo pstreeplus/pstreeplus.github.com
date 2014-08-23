@@ -11,7 +11,7 @@ layout: post
 
 >`S = "mystr"` 或 `S = 'mystr'`
 
-当然python提供了很多字符串处理的工具，这里只列出常用的几个：
+当然`python`提供了很多字符串处理的工具，这里只列出常用的几个：
 
 ## 1.`find()`,`index()` 
 
@@ -71,13 +71,13 @@ S.split("XXX")               # ['aa','bb','cc']
 S.split('XX')                # ['aa','Xbb','Xcc','X']
 ```
 
-##5.`repalce()`
+##5.`replace()`
 
 >把一个字符串的一部分替换成另一个指定的串，返回处理后的字符串
 
 ```python
 S = "abcdaaSS"
-S.repalce("b",'f')           # "afcdaaSS"
+S.replace("b",'f')           # "afcdaaSS"
 ```
 ##6.`join()`
 
