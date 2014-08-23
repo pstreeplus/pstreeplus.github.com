@@ -19,13 +19,11 @@ layout: post
 
 ###Example:
 ```python
->S = 'this is a str'
->find('is') 
->#value is 2
->index('is')
->value also is 2
->find('no')
->#value is -1
->index('no')
->#exception.ValueError
+S = 'this is a str'
+find('is')  #value is 2
+#value is 2
+index('is') #value also is 2
+value also is 2
+find('no')  #value is -1
+index('no') #exception.ValueError
 ```
