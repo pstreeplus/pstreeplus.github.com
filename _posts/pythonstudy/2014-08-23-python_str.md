@@ -85,10 +85,10 @@ S.repalce("b",'f')           # "afcdaaSS"
 
 ```python
 L = ['aa','bb','cc']
-','.join(L)                 # "aa,bb,cc"
+','.join(L)                  # "aa,bb,cc"
 '|'.join(L)                  # "aa|bb|cc"
 ```
->join()参数需要一个字符序列，如果要出传递的一系列整数，会怎样呢？
+>`join()`参数需要一个字符序列，如果要出传递的一系列整数，会怎样呢？
 
 ```python
 L = range(10)
