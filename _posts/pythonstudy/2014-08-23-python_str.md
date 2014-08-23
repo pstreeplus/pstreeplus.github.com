@@ -27,25 +27,25 @@ index('no')         tion.ValueError
 
 ##2.`lstrip()`,`rstrip()`,`strip()`
 
->如果不带任何参数，`lstrip()`,`rstrip()`,`strip()`分别会删除前导空白字符，结尾空白字符，和前后空白字符`(tab,enter,space...)`,它们的返回值都是处理后的字符串。如果带参数，那么它们会*删除参数中字符的任意组合，只要这个组合存在函数作用的位置上*。为了看情这一点，我们来看个例子：
+>如果不带任何参数，`lstrip()`,`rstrip()`,`strip()`分别会删除前导空白字符，结尾空白字符，和前后空白字符`(tab,enter,space...)`,它们的返回值都是处理后的字符串。如果带参数，那么它们会##删除参数中字符的任意组合，只要这个组合存在函数作用的位置上##。为了看情这一点，我们来看个例子：
 
 ```python
 S = "<this is s str>"
-S.lstrip('<')       # "this is a str>"
-S.rstrip('>')       # "<this is a str"
-S.strip('<')        # "this is a str>"
-S.strip('>')        # "<this is a str"
-S.strip('>').strip('<')      # "this is a str"
-S.strip("<>")       # "this is a str"
-S.strip("><")       # "this is a str"
+S.lstrip('<')                    # "this is a str>"
+S.rstrip('>')                    # "<this is a str"
+S.strip('<')                     # "this is a str>"
+S.strip('>')                     # "<this is a str"
+S.strip('>').strip('<')          # "this is a str"
+S.strip("<>")                    # "this is a str"
+S.strip("><")                    # "this is a str"
 S = "<<<this is a str>>>>"
-S.lstrip('<')       # "this is a str>>>"
-S.rstrip('>')       # "<<<this is a str"
-S.strip('<')        # "this is a str>>>"
-S.strip('>')        # "<<<this is a str"
-S.strip("<>")       # "this is a str"
-S.strip("><")       # "this is a str"
-S.strip("<><>")     # "this is a str"
+S.lstrip('<')                    # "this is a str>>>"
+S.rstrip('>')                    # "<<<this is a str"
+S.strip('<')                     # "this is a str>>>"
+S.strip('>')                     # "<<<this is a str"
+S.strip("<>")                    # "this is a str"
+S.strip("><")                    # "this is a str"
+S.strip("<><>")                  # "this is a str"
 ```
 
 ##3.`upper()`,`lower()`
@@ -54,9 +54,9 @@ S.strip("<><>")     # "this is a str"
 
 ```python
 S = "abs"
-S.upper()  # "ABC"
+S.upper()                    # "ABC"
 S = 'ABC'
-S.lower()  # "abc"
+S.lower()                    # "abc"
 ```
 
 ##4.`split()`
@@ -65,10 +65,10 @@ S.lower()  # "abc"
 
 ```python
 S = "a,b,c"
-S.split(',')            # ['a','b','c']
+S.split(',')                 # ['a','b','c']
 S = "aaXXXbbXXXccXXX"
-S.split("XXX")          # ['aa','bb','cc']
-S.split('XX')           # ['aa','Xbb','Xcc','X']
+S.split("XXX")               # ['aa','bb','cc']
+S.split('XX')                # ['aa','Xbb','Xcc','X']
 ```
 
 ##5.`repalce()`
@@ -77,7 +77,7 @@ S.split('XX')           # ['aa','Xbb','Xcc','X']
 
 ```python
 S = "abcdaaSS"
-S.repalce("b",'f')     # "afcdaaSS"
+S.repalce("b",'f')           # "afcdaaSS"
 ```
 ##6.`join()`
 
@@ -85,16 +85,19 @@ S.repalce("b",'f')     # "afcdaaSS"
 
 ```python
 L = ['aa','bb','cc']
-','.join(L)           # "aa,bb,cc"
-'|'.join(L)           # "aa|bb|cc"
+','.join(L)                 # "aa,bb,cc"
+'|'.join(L)                  # "aa|bb|cc"
 ```
 >join()参数需要一个字符序列，如果要出传递的一系列整数，会怎样呢？
+
 ```python
 L = range(10)
 ','.join(L) 
 # "exception.TypeError"
 ```
+
 >因此需要将L中的数子转换成字符串
+
 ```python
 ','.join([str[i] for i in L])
 # '0,1,2,3,4,5,6,7,8,9'
@@ -102,4 +105,4 @@ L = range(10)
 
 ##总结
 
->学习这些很零碎的只是关键是多加练习，另外还有一点就是，学习函数，一定要记清楚它们的参数以及返回值。
+>学习这些很零碎的知识点关键是多加练习，另外还有一点就是，学习函数，一定要记清楚它们的参数以及##返回值##。
