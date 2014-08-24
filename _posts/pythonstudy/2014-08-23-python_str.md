@@ -22,7 +22,7 @@ S = 'this is a str'
 S.find('is')          #value is 2
 S.index('is')         #value also is 2
 S.find('no')          #value is -1
-S.index('no')         tion.ValueError
+S.index('no')         #exception.ValueError
 ```
 
 ##2.`lstrip()`,`rstrip()`,`strip()`
