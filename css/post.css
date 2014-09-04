@@ -3,7 +3,8 @@
     border: 2px solid #00BFFF;
     background-color: #212121;
     padding: 0 .4em;
-    overflow: auto;
+    overflow-x: scroll;
+    overflow-y: scroll;
 }
 pre {
     overflow: auto;
