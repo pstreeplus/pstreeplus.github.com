@@ -1,7 +1,7 @@
 .post pre {
     overflow: auto;
     border: 1px solid #AABDB4;
-    background-color: #FFFFFF;
+   // background-color: #FFFFFF;
     padding: 0 .4em;
 }
 pre {
@@ -14,7 +14,7 @@ pre {
 
 .post code {
     border: 1px solid #FFFFFF;
-    background-color: #FFFFFF;
+   // background-color: #FFFFFF;
     padding: 0 .2em;
 }
 
