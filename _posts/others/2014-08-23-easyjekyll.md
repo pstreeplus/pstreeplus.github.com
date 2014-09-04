@@ -3,9 +3,9 @@ title: 简化markdown + Jekyll的操作
 layout: post
 ---
 
-使用`Jekyll`生成`github page`时，文件命名必须符合它的规范，它可以把你用`markdown`标记语言写的`md`文件动态的解析成`html`文本，用于生成轻量级`Blog`。
+使用<let>Jekyll</let>生成<let>github page</let>时，文件命名必须符合它的规范，它可以把你用<let>markdown</let>标记语言写的<let>md</let>文件动态的解析成<let>html</let>文本，用于生成轻量级<let>Blog</let>。
 
-比如要写个名为`test`的文件，你必须以`2014-08-22(year-month-day)-filename.md`的形式来命名，这样就显得有点麻烦。为了简化操作，我们可以自己写个脚本或者写个小程序来自动帮你完成这些乏味的操作，把精力放在有意义的事情上。
+比如要写个名为<let>test</let>的文件，你必须以<let>2014-08-22(year-month-day)-filename</let>.md的形式来命名，这样就显得有点麻烦。为了简化操作，我们可以自己写个脚本或者写个小程序来自动帮你完成这些乏味的操作，把精力放在有意义的事情上。
 
 
 
@@ -33,8 +33,8 @@ int main(int agrc,char **argv){
 }
 ```
 
-把它编译为可执行文件，假如这个可执行文件名是`blog`，我们可以把它放到`/bin`目录下，那么我们就可以像使用`ls -a`这样的命令来使用它了，只需要敲入：
+把它编译为可执行文件，假如这个可执行文件名是<let>blog</let>，我们可以把它放到<let>/bin`</let>目录下，那么我们就可以像使用<let>ls -a</let>这样的命令来使用它了，只需要敲入：
 
->`blog filename`
+><let>blog filename</let>
 
 就会自动帮你添加好标题等，接下来你需要做的就是专心写博文了。
