@@ -6,15 +6,15 @@ layout: post
 
 ## 创建字符串
 
-在`Python`中创建一个字符串很简单，可以像下面这样来创建:
+在<let>Python</let>中创建一个字符串很简单，可以像下面这样来创建:
 
->`S = "mystr"` 或 `S = 'mystr'`
+><let>S = "mystr"</let> 或 <let>S = 'mystr'</let>
 
-当然`python`提供了很多字符串处理的工具，这里只列出常用的几个：
+当然<let>python</let>提供了很多字符串处理的工具，这里只列出常用的几个：
 
-## 1.`find()`,`index()` 
+## 1.<let>find()</let>,<let>index()</let> 
 
->`find()` 和 `index()` 都可以检查一个字符串是否是另一个字符串的字串，所不同的是：在查找失败的时候`find()`返回`-1`，而`index()`抛出一个异常`(exceptions.ValueError)`。在查找成功是二者返回值是一样的，都是字串第一个字符出现的位置。
+><let>find()</let> 和 <let>index()</let> 都可以检查一个字符串是否是另一个字符串的字串，所不同的是：在查找失败的时候<let>find()</let>返回<let>-1</let>，而<let>index()</let>抛出一个异常<let>(exceptions.ValueError)</let>。在查找成功是二者返回值是一样的，都是字串第一个字符出现的位置。
 
 ```python
 S = 'this is a str'
@@ -47,7 +47,7 @@ S.strip("><")                    # "this is a str"
 S.strip("<><>")                  # "this is a str"
 ```
 
-##3.`upper()`,`lower()`
+##3.<let>upper() , lower() </let>
 
 >它们把目标字符换转换成大/小写,并返回处理后字符串。
 
@@ -58,7 +58,7 @@ S = 'ABC'
 S.lower()                    # "abc"
 ```
 
-##4.`split()`
+##4.<let>split()</let>
 
 >它会按照指定的字符或字符串来分割目标字符串，返回一个列表。
 
@@ -70,7 +70,7 @@ S.split("XXX")               # ['aa','bb','cc']
 S.split('XX')                # ['aa','Xbb','Xcc','X']
 ```
 
-##5.`replace()`
+##5.<let>replace()</let>
 
 >把一个字符串的一部分替换成另一个指定的串，返回处理后的字符串
 
@@ -78,16 +78,16 @@ S.split('XX')                # ['aa','Xbb','Xcc','X']
 S = "abcdaaSS"
 S.replace("b",'f')           # "afcdaaSS"
 ```
-##6.`join()`
+##6.<let>join()</let>
 
->与`split()`相反，它把多个字符串连接在一起，返回一个字符串。
+>与<let>split()</let>相反，它把多个字符串连接在一起，返回一个字符串。
 
 ```python
 L = ['aa','bb','cc']
 ','.join(L)                  # "aa,bb,cc"
 '|'.join(L)                  # "aa|bb|cc"
 ```
->`join()`参数需要一个字符序列，如果要出传递的一系列整数，会怎样呢？
+><let>join()</let>参数需要一个字符序列，如果要出传递的一系列整数，会怎样呢？
 
 ```python
 L = range(10)
@@ -95,7 +95,7 @@ L = range(10)
 # "exception.TypeError"
 ```
 
->因此需要将L中的数子转换成字符串
+>因此需要将<let>L</let>中的数子转换成字符串
 
 ```python
 ','.join([str[i] for i in L])
