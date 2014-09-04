@@ -1,107 +1,19 @@
 ---
-title: python学习笔记---字符串
+title: python学习笔
 layout: post
 
 ---
 
-## 创建字符串
+    王志立，哈尔滨工程大学（HEU）2012级计算机科学与技术学院本科生
 
-在<let>Python</let>中创建一个字符串很简单，可以像下面这样来创建:
+    喜欢算法，喜欢编程，喜欢C/C++,Python等语言，熟悉并热爱linux操作系统，喜欢开源软件，崇尚开源精神。
 
-><let>S = "mystr"</let> 或 <let>S = 'mystr'</let>
+    个人邮箱：wangstdio.h@gmail.com / 240130760@qq.com
 
-当然<let>python</let>提供了很多字符串处理的工具，这里只列出常用的几个：
+    github: <a href = "https://github.com/uglyname">https://github.com/uglyname</a> 
 
-## 1.<let>find()</let>,<let>index()</let> 
+    I am everywhere: 
 
-><let>find()</let> 和 <let>index()</let> 都可以检查一个字符串是否是另一个字符串的字串，所不同的是：在查找失败的时候<let>find()</let>返回<let>-1</let>，而<let>index()</let>抛出一个异常<let>(exceptions.ValueError)</let>。在查找成功是二者返回值是一样的，都是字串第一个字符出现的位置。
-
-```python
-S = 'this is a str'
-S.find('is')          #value is 2
-S.index('is')         #value also is 2
-S.find('no')          #value is -1
-S.index('no')         #exception.ValueError
-```
-
-##2.<let> lstrip(),rstrip(),strip() </let>
-
->如果不带任何参数，<let>lstrip(),rstrip(),strip()</let>分别会删除前导空白字符，结尾空白字符，和前后空白字符<let>(tab,enter,space...)</let>,它们的返回值都是处理后的字符串。如果带参数，那么它们会**删除参数中字符的任意组合，只要这个组合存在函数作用的位置上**。为了看清楚这一点，我们来看个例子：
-
-```python
-S = "<this is s str>"
-S.lstrip('<')                    # "this is a str>"
-S.rstrip('>')                    # "<this is a str"
-S.strip('<')                     # "this is a str>"
-S.strip('>')                     # "<this is a str"
-S.strip('>').strip('<')          # "this is a str"
-S.strip("<>")                    # "this is a str"
-S.strip("><")                    # "this is a str"
-S = "<<<this is a str>>>>"
-S.lstrip('<')                    # "this is a str>>>"
-S.rstrip('>')                    # "<<<this is a str"
-S.strip('<')                     # "this is a str>>>"
-S.strip('>')                     # "<<<this is a str"
-S.strip("<>")                    # "this is a str"
-S.strip("><")                    # "this is a str"
-S.strip("<><>")                  # "this is a str"
-```
-
-##3.<let>upper() , lower() </let>
-
->它们把目标字符换转换成大/小写,并返回处理后字符串。
-
-```python
-S = "abs"
-S.upper()                    # "ABC"
-S = 'ABC'
-S.lower()                    # "abc"
-```
-
-##4.<let>split()</let>
-
->它会按照指定的字符或字符串来分割目标字符串，返回一个列表。
-
-```python
-S = "a,b,c"
-S.split(',')                 # ['a','b','c']
-S = "aaXXXbbXXXccXXX"
-S.split("XXX")               # ['aa','bb','cc']
-S.split('XX')                # ['aa','Xbb','Xcc','X']
-```
-
-##5.<let>replace()</let>
-
->把一个字符串的一部分替换成另一个指定的串，返回处理后的字符串
-
-```python
-S = "abcdaaSS"
-S.replace("b",'f')           # "afcdaaSS"
-```
-##6.<let>join()</let>
-
->与<let>split()</let>相反，它把多个字符串连接在一起，返回一个字符串。
-
-```python
-L = ['aa','bb','cc']
-','.join(L)                  # "aa,bb,cc"
-'|'.join(L)                  # "aa|bb|cc"
-```
-><let>join()</let>参数需要一个字符序列，如果要出传递的一系列整数，会怎样呢？
-
-```python
-L = range(10)
-','.join(L) 
-# "exception.TypeError"
-```
-
->因此需要将<let>L</let>中的数子转换成字符串
-
-```python
-','.join([str[i] for i in L])
-# '0,1,2,3,4,5,6,7,8,9'
-```
-
-##总结
-
->学习这些很零碎的知识点关键是多加练习，另外还有一点就是，学习函数，一定要记清楚它们的参数以及**返回值**。
+    <a href = "https://www.facebook.com/wangstdio.h"> On Facebook </a>
+    <a href = "https://twitter.com/Wzl_Linux"> On Twitter </a>
+    <a href = "http://www.quora.com/Wang-Zhili"> On Quora </a> 

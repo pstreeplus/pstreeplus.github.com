@@ -1,6 +1,7 @@
 ---
 title: 简化+ Jekyll的操作
 layout: post
+
 ---
 
 使用<let>Jekyll</let>生成<let>github page</let>时，文件命名必须符合它的规范，它可以把你用<let>markdown</let>标记语言写的<let>md</let>文件动态的解析成<let>html</let>文本，用于生成轻量级<let>Blog</let>。
