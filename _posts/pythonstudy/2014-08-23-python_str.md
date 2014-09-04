@@ -26,7 +26,7 @@ S.index('no')         #exception.ValueError
 
 ##2.<let> lstrip(),rstrip(),strip() </let>
 
->如果不带任何参数，<let>lstrip(), rstrip(),strip()</let>分别会删除前导空白字符，结尾空白字符，和前后空白字符<let>(tab,enter,space...)</let>,它们的返回值都是处理后的字符串。如果带参数，那么它们会**删除参数中字符的任意组合，只要这个组合存在函数作用的位置上**。为了看清楚这一点，我们来看个例子：
+>如果不带任何参数，<let>lstrip(),rstrip(),strip()</let>分别会删除前导空白字符，结尾空白字符，和前后空白字符<let>(tab,enter,space...)</let>,它们的返回值都是处理后的字符串。如果带参数，那么它们会**删除参数中字符的任意组合，只要这个组合存在函数作用的位置上**。为了看清楚这一点，我们来看个例子：
 
 ```python
 S = "<this is s str>"
