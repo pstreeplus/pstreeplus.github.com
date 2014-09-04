@@ -9,14 +9,16 @@ title: "Wang Zhi Li"
     <ul class="posts">
         <hr />
         {% for post in site.posts %}
-        <div class="IndexP">
-            <h1><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h1>
-            <p class="">{% if post.description %}{{ post.description  | strip_html | strip_newlines | truncate: 220 }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 220 }}{% endif %}</p>
-            <div class="date">
-                <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time>
+            {% if post.title != "about"%}
+            <div class="IndexP">
+                <h1><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h1>
+                <p class="">{% if post.description %}{{ post.description  | strip_html | strip_newlines | truncate: 220 }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 220 }}{% endif %}</p>
+                <div class="date">
+                    <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time>
+                </div>
+                <a class="ContinueRead" href="{{ site.url }}{{ post.url }}">阅读全文</a>
             </div>
-            <a class="ContinueRead" href="{{ site.url }}{{ post.url }}">阅读全文</a>
-        </div>
+            {% endif %}
         {% endfor %}
     </ul>
 </div>
