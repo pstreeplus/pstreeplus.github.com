@@ -3,10 +3,6 @@ title: About Me
 layout:post
 ---
 
-<pre>
-
-
-
 
     
     王志立，哈尔滨工程大学（HEU）2012级计算机科学与技术学院本科生
@@ -22,4 +18,3 @@ layout:post
     <a href = "https://www.facebook.com/wangstdio.h"> On Facebook </a>
     <a href = "https://twitter.com/Wzl_Linux"> On Twitter </a>
     <a href = "http://www.quora.com/Wang-Zhili"> On Quora </a> 
-</pre>
