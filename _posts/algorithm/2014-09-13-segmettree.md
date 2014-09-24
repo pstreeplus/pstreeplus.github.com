@@ -8,4 +8,4 @@ layout: post
 
 线段树主要有两种重要的操作**<let>: pushUp(),pushDown()</let>**，分别是向上更新和向下更新。
 
-线段树解决的问题一般有三种：<br>&nbsp&nbsp&nbsp&nbsp&nbsp<let>1：</let>单点更新，区间求值;<br>&nbsp&nbsp&nbsp&nbsp&nbsp<let>2：</let>区间更新，单点求值;<br>&nbsp&nbsp&nbsp&nbsp&nbsp<let>3：</let>区间更新，区间求值。
+线段树解决的问题一般有三种：<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<let>1：</let>单点更新，区间求值;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<let>2：</let>区间更新，单点求值;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<let>3：</let>区间更新，区间求值。
