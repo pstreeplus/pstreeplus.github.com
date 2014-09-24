@@ -1,10 +1,10 @@
-/* .post pre { */
-/*     overflow: auto; */
-/*     /1* border: 4px solid #00BFFF; *1/ */
-/*     background-color: #212121; */
-/*     padding: 0 .4em; */
-/*     overflow: auto; */
-/* } */
+.post pre {
+    overflow: auto;
+    /* border: 4px solid #00BFFF; */
+    background-color: #212121;
+    padding: 0 .4em;
+    overflow: auto;
+}
 pre {
     overflow: auto;
 }
