@@ -1,11 +1,13 @@
-pre {
+.post pre {
     overflow: auto;
     /* border: 4px solid #00BFFF; */
     background-color: #212121;
     padding: 0 .4em;
     overflow: auto;
 }
-
+pre {
+    overflow: auto;
+}
 
 .post ul, .post ol {
     margin-left: 1.35em;
