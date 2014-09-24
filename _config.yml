@@ -1,6 +1,0 @@
-name: Zhi Li's Blog
-markdown: redcarpet
-pygments: true
-
-permalink:   /:categories/:title
-
