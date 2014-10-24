@@ -1,4 +1,4 @@
-permalink: /:year/:month/:day/:title.html
+﻿permalink: /:year/:month/:day/:title.html
 paginate: 10
 markdown: redcarpet
 
@@ -32,7 +32,7 @@ disqus:
   shortname: wangzhili
 
 # 主题设置，自动激活某个标签
-active: 算法
+active: 读书
 
 # 首页除了最新文章外显示分类
 #cates: 
