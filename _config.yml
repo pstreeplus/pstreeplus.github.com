@@ -1,12 +1,12 @@
 # Site settings
-title: blog title
+title: 王志立的博客
 email: me@mysite.org
 description: "Really cool blog about ... something"
 baseurl: "/"
-url: "http://mysite.org"
+url: "http://www.wangzhili.net"
 twitter_username: user
 github_username: user
-disqus_username: false
+disqus_username: wangzhili
 isso_domain: comments.mysite.org
 
 # Build settings
