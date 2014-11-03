@@ -18,4 +18,3 @@ github: [https://github.com/uglyname](https://github.com/uglyname/uglyname.githu
 
 [On Facebook](https://www.facebook.com/wangstdio.h)
 
-test a test
