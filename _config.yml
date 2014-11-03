@@ -1,47 +1,21 @@
-﻿permalink: /:year/:month/:day/:title.html
-paginate: 10
+# Site settings
+title: blog title
+email: me@mysite.org
+description: "Really cool blog about ... something"
+baseurl: "/"
+url: "http://mysite.org"
+twitter_username: user
+github_username: user
+disqus_username: false
+isso_domain: comments.mysite.org
+
+# Build settings
 markdown: redcarpet
+permalink: /:title/
 
-# 作者信息
-author: 
-  name:  王志立
-  email: wangstdio.h@gmail.com
-  #link: http://painterlin.com
-  #weibo: http://weibo.com/orangeissweet
-  github: https://github.com/uglyname/uglyname.github.com
-  #music: http://site.douban.com/linanya
-  #linkedin: https://www.linkedin.com/pub/anya-lin/81/91/232
-
-# 站点信息
-title: 王志立的博客
-description: My personal blog
-url: http://www.wangzhili.net
-rss_url: /pages/atom.xml
-
-# gavatar头像及Favicon
-gavatar: /public/img/my.png
-favicon: /public/img/my.png
-
-# google analytics 设置
-ga:
-  id: UA-54262064-1 
-  url: painterlin.com
-
-# disqus 设置
-disqus:
-  shortname: wangzhili
-
-# 主题设置，自动激活某个标签
-active: 读书
-
-# 首页除了最新文章外显示分类
-#cates: 
- # - 矩阵补全
- # - LaTeX
-
-# 中文本地化
-locals:
-  tags: 标签
-  about: 关于
-  newest: 最新文章
-  archive: 归档
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
