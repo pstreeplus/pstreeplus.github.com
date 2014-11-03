@@ -1,11 +1,10 @@
 ---
-layout: post
-title: About Me
-category: 
-tags: 
-keywords: 
-description: 
+layout: page_title
+title: <i class="fa fa-archive fa-lg"></i>
+titlename: 关于
+comments: false
 ---
+
 王志立，哈尔滨工程大学计算机学院(HEU)2012级本科生
 
 喜欢算法，热爱编程，喜欢C/C++,Python，熟悉并喜欢linux操作系统，喜欢开源软件，崇尚开源精神，中度代码洁癖。
