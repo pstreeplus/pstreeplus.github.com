@@ -1,26 +1,26 @@
-permalink: /:year/:month/:day/:title.html
+﻿permalink: /:year/:month/:day/:title.html
 paginate: 10
 markdown: redcarpet
 
 # 作者信息
 author: 
-  name: Anya Lin
-  email: lay.1010@hotmail.com
-  link: http://painterlin.com
-  weibo: http://weibo.com/orangeissweet
-  github: http://github.com/lay1010
-  music: http://site.douban.com/linanya
-  linkedin: https://www.linkedin.com/pub/anya-lin/81/91/232
+  name:  王志立
+  email: wangstdio.h@gmail.com
+  #link: http://painterlin.com
+  #weibo: http://weibo.com/orangeissweet
+  github: https://github.com/uglyname/uglyname.github.com
+  #music: http://site.douban.com/linanya
+  #linkedin: https://www.linkedin.com/pub/anya-lin/81/91/232
 
 # 站点信息
-title: 林安亚的博客
+title: 王志立的博客
 description: My personal blog
-url: http://painterlin.com
+url: http://www.wangzhili.net
 rss_url: /pages/atom.xml
 
 # gavatar头像及Favicon
-gavatar: /public/img/LAY.png
-favicon: /public/img/LAY.png
+gavatar: /public/img/my.png
+favicon: /public/img/my.png
 
 # google analytics 设置
 ga:
@@ -29,15 +29,15 @@ ga:
 
 # disqus 设置
 disqus:
-  shortname: painterlin
+  shortname: wangzhili
 
 # 主题设置，自动激活某个标签
 active: 读书
 
 # 首页除了最新文章外显示分类
-cates: 
-  - 矩阵补全
-  - LaTeX
+#cates: 
+ # - 矩阵补全
+ # - LaTeX
 
 # 中文本地化
 locals:
