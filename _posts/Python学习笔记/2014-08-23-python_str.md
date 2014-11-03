@@ -1,12 +1,14 @@
 
+
 ---
 layout: post
-title: Python字符串
+title:  Python字符串
 category: Python
 tags: 编程语言
 keywords: 
 description: 
 ---
+
 ## 创建字符串
 
 在Python中创建一个字符串很简单，可以像下面这样来创建:
