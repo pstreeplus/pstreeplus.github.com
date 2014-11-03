@@ -1,4 +1,4 @@
-
+---
 title: Python字符串
 category: Python
 tags: 编程语言
