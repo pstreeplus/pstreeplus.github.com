@@ -1,8 +1,10 @@
 ---
-layout: page_title
-title: <i class="fa fa-archive fa-lg"></i>
-titlename: 关于
-comments: false
+layout: post
+title: About ME
+category: About
+tags: About
+keywords: 
+description: 
 ---
 
 王志立，哈尔滨工程大学计算机学院(HEU)2012级本科生
