@@ -1,8 +1,8 @@
 ---
 layout: post
-title: 在Mac上通过Sublime、Skim编辑LaTeX
-category: 技术
-tags: LaTeX Sublime Skim Mac
+title: 线段树（持续更新中。。。）
+category: 数据结构
+tags: ACM
 keywords: 
 description: 
 ---
