@@ -23,3 +23,4 @@ defaults:
 
 gavatar: /source/my.png
 favicon: /source/my.png
+about: /about.md
