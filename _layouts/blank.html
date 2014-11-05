@@ -43,7 +43,7 @@
                 {% endif %}
                 {% endfor %}
                 {% for category in site.categories %}    
-                <li><a href="#{{ category | first }}">{{ category[0] }}</a></li>
+                <a href="#{{ category | first }}" data-toggle="tab">{{ category[0] }}</a><br><br>
                 {% endfor %}
             </nav>
             <!-- </header> -->
