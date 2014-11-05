@@ -42,6 +42,9 @@
                 <a href="{{ node.url }}" {% if page.url == node.url %} id="selected"{% endif %}>{{ node.title }}</a><br><br>
                 {% endif %}
                 {% endfor %}
+                {% for category in site.categories %}    
+                <li><a href="#{{ category | first }}">{{ category[0] }}</a></li>
+                {% endfor %}
             </nav>
             <!-- </header> -->
             {{ content }}
