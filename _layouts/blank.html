@@ -35,10 +35,10 @@
         <!-- <h1><a href="{{ site.baseurl }}">{{ site.title }}</a></h1> -->
         <nav>
             <!-- <ul> -->
-            <a href="{{ site.baseurl }}">Home</a>
+            <a href="{{ site.baseurl }}">Home</a><br>
             {% for node in site.pages %}
                 {% if node.title %}
-                    <a href="{{ node.url }}"{% if page.url == node.url %} id="selected"{% endif %}>{{ node.title }}</a>
+                <a href="{{ node.url }}"{% if page.url == node.url %} id="selected"{% endif %}>{{ node.title }}</a><br>
                 {% endif %}
             {% endfor %}
             <!-- <li><a href="{{ site.about }}">关于</a><li> -->
