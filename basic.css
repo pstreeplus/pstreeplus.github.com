@@ -86,6 +86,11 @@ body > footer span {
     margin: 0 5%;
 }
 
+nav {
+    left:0
+    top:10
+}
+
 nav li {
     display: inline-block;
     width: 19%;
