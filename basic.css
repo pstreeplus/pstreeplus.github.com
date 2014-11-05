@@ -87,18 +87,18 @@ body > footer span {
 }
 
 nav {
-    position:relative;
+    position:absolute;
     top:20px;
     left:40px;
 }
 
-nav li {
-    display: inline-block;
-    width: 19%;
-    min-width: 6em;
-}
+/* nav li { */
+/*     display: inline-block; */
+/*     width: 19%; */
+/*     min-width: 6em; */
+/* } */
 
-nav ul {
-    padding: 1em 0;
-    margin: 0;
-}
+/* nav ul { */
+/*     padding: 1em 0; */
+/*     margin: 0; */
+/* } */
