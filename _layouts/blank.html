@@ -28,27 +28,41 @@
         <br>
         <br>
         <h3><center><h3><font color="#000080">终</font><font color="#FFA500">将</font><font color="#2E8B57">一</font><font color="#F08080">无</font><font color="#00CED1">所</font><font color="red"></font><font color="#BA55D3">有</font><font color="#601986">无</font><font color="#556fb5">处</font><font color="#fa1089">安</font><font color="#638c0b">放</font><font color="000080">的</font><font color="2E8B57">青</font><font color="00CED1">春</font></center></h3>
-        <br>
-        <br>
-        <br>
-        <!-- <header> -->
-        <!-- <h1><a href="{{ site.baseurl }}">{{ site.title }}</a></h1> -->
-        <nav>
-            <!-- <ul> -->
-            <a href="{{ site.baseurl }}">主页</a><br>
             <br>
-            {% for node in site.pages %}
+            <br>
+            <br>
+            <!-- <header> -->
+            <!-- <h1><a href="{{ site.baseurl }}">{{ site.title }}</a></h1> -->
+            <nav>
+                <!-- <ul> -->
+                <a href="{{ site.baseurl }}">主页</a><br>
+                <br>
+                {% for node in site.pages %}
                 {% if node.title %}
                 <a href="{{ node.url }}"{% if page.url == node.url %} id="selected"{% endif %}>{{ node.title }}</a><br><br>
                 {% endif %}
-            {% endfor %}
-            <!-- <li><a href="{{ site.about }}">关于</a><li> -->
-            <!-- </ul> -->
-        </nav>
-        <!-- </header> -->
-        {{ content }}
-        <!-- <footer> -->
-        <!-- <span>Copyright</span><span><a href="{{ site.url }}">{% if page.author %}{{ page.author }}{% else %}{{site.title}}{% endif %}</a></span><span>{{ site.time | date: "%Y" }}</span> -->
-        <!-- </footer> -->
-    </body>
-</html>
+                {% endfor %}
+                {% for cate in site.cates %}
+                        {% for tag in site.tags %} 
+                        {% if tag[0] == cate %}
+                        {% for post in tag[1] %}
+                        <a  href='{{ post.url }}'>
+                            {{post.title}}
+                            <span>{{ post.date | date:"%Y年%m月%d日" }}</span>
+                        </a>
+                        {% endfor %}
+                        {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endfor %}
+                <!-- <li><a href="{{ site.about }}">关于</a><li> -->
+                <!-- </ul> -->
+            </nav>
+            <!-- </header> -->
+            {{ content }}
+            <!-- <footer> -->
+            <!-- <span>Copyright</span><span><a href="{{ site.url }}">{% if page.author %}{{ page.author }}{% else %}{{site.title}}{% endif %}</a></span><span>{{ site.time | date: "%Y" }}</span> -->
+            <!-- </footer> -->
+        </body>
+    </html>
