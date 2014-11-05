@@ -15,7 +15,7 @@ S = "mystr"或 S = 'mystr'
 
 ### 1.find(),index() 
 
-find()和 index() 都可以检查一个字符串是否是另一个字符串的字串，所不同的是：在查找失败的时候find()返回-1>，而index()抛出一个异常(exceptions.ValueError)。在查找成功是二者返回值是一样的，都是字串第一个字符出现的位置。
+find()和 index() 都可以检查一个字符串是否是另一个字符串的字串，所不同的是：在查找失败的时候find()返回-1，而index()抛出一个异常(exceptions.ValueError)。在查找成功是二者返回值是一样的，都是字串第一个字符出现的位置。
 
 ```python
 S = 'this is a str'
