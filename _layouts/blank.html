@@ -27,18 +27,23 @@
     <body>
         <br>
         <br>
-        <h2><center>终将一无所有无处安放的单薄青春</center></h2>
+        <h2><center><h3><font color="#000080">终</font><font color="#FFA500">将</font><font color="#2E8B57">一</font><font color="#F08080">无</font><font color="#00CED1">所</font><font color="red"></font><font color="#BA55D3">有</font><font color="#601986">无</font><font color="#556fb5">处</font><font color="#fa1089">安</font><font color="#638c0b">放</font></h3><font color="000080">的</font><font color="2E8B57">青</font><font color="00CED1">春</font></center></h2>
         <br>
         <br>
         <br>
         <!-- <header> -->
-            <!-- <h1><a href="{{ site.baseurl }}">{{ site.title }}</a></h1> -->
-            <nav>
-                <!-- <ul> -->
-                    <li><a href="{{ site.baseurl }}">Home</a></li>{% for node in site.pages %}{% if node.title %}<li><a href="{{ node.url }}"{% if page.url == node.url %} id="selected"{% endif %}>{{ node.title }}</a></li>{% endif %}{% endfor %}
-                    <!-- <li><a href="{{ site.about }}">关于</a><li> -->
-                <!-- </ul> -->
-            </nav>
+        <!-- <h1><a href="{{ site.baseurl }}">{{ site.title }}</a></h1> -->
+        <nav>
+            <!-- <ul> -->
+            <a href="{{ site.baseurl }}">Home</a>
+            {% for node in site.pages %}
+                {% if node.title %}
+                    <a href="{{ node.url }}"{% if page.url == node.url %} id="selected"{% endif %}>{{ node.title }}</a>
+                {% endif %}
+            {% endfor %}
+            <!-- <li><a href="{{ site.about }}">关于</a><li> -->
+            <!-- </ul> -->
+        </nav>
         <!-- </header> -->
         {{ content }}
         <!-- <footer> -->
