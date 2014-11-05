@@ -87,8 +87,9 @@ body > footer span {
 }
 
 nav {
-    left:0
-    top:10
+    position:relative;
+    top:20px;
+    left:40px;
 }
 
 nav li {
