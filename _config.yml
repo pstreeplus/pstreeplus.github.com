@@ -21,4 +21,4 @@ defaults:
       layout: "default"
 
 
-about: /about.md
+# about: /about.md
