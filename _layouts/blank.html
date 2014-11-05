@@ -40,7 +40,7 @@
                 {% for category in site.categories %}    
                 <a href="#{{ category | first }}" data-toggle="tab">{{ category[0] }}</a><br><br>
                 {% endfor %}
-                <a href="#tags" data-toggle="tab">标签</a>
+                <a href="#tags" data-toggle="tab">标签</a><br><br>
                 {% for node in site.pages %}
                 {% if node.title %}
                 <a href="{{ node.url }}" {% if page.url == node.url %} id="selected"{% endif %}>{{ node.title }}</a><br><br>
