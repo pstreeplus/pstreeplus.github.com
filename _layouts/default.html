@@ -3,6 +3,7 @@ layout: blank
 ---
       <article>
         <header>
+        <center>
           <h3><a href="{{ page.url }}">{{ page.title }}</a></h3>
           <!-- {% if page.author %}{{ page.author }} • {% endif %}-->
           {% if page.date %}<time>{{ page.date | date: "%b %-d, %Y" }}</time>{% endif %}
@@ -10,6 +11,7 @@ layout: blank
         </header>
         <br>
         <br>
+        </center>
         <div>
 {{ content }}
         </div>
