@@ -88,9 +88,10 @@ body > footer span {
 
 nav {
     /* background:# */
-    background-repeat:no-repeat;
-    background-attachment:fixed;
-    position:absolute;
+    /* background-repeat:no-repeat; */
+    /* background-attachment:fixed; */
+    position:fixed;
+    /* position:absolute; */
     top:140px;
     left:40px;
 }
