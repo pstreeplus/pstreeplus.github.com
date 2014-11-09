@@ -1,7 +1,8 @@
 ---
+layout: post
 title: 树链剖分
-category: 算法,数据结构
-tags: ACM,树
+category: 数据结构
+tags: 树
 keywords: 
 description: 
 ---
