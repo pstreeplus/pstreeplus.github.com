@@ -17,8 +17,8 @@ url: http://www.wangzhili.net
 rss_url: /pages/atom.xml
 
 # gavatar头像及Favicon
-gavatar: favicon.ico
-#favicon: /public/img/LAY.png
+gavatar: /source/my.png
+favicon: /source/my.png
 
 # google analytics 设置
 #ga:
