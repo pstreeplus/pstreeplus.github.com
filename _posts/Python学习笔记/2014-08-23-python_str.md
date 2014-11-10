@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Python字符串
-category: Python
-tags: 编程语言
+category: 编程语言
+tags: Python
 keywords: 
 description: 
 ---
