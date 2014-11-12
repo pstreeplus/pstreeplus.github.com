@@ -3204,7 +3204,7 @@ textarea.input-lg, select[multiple].input-lg {
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active,
 .open>.dropdown-toggle.btn-primary {
-    color: #fff;
+    color: #EE0202;
     background-color: #1abc9c;
     border-color: #1abc9c;
 }
