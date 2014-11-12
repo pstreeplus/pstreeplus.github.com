@@ -20,6 +20,8 @@ rss_url: /pages/atom.xml
 gavatar: /source/my.png
 favicon: /source/my.png
 
+pygments: true
+
 # google analytics 设置
 #ga:
 #  id: UA-54262064-1 
