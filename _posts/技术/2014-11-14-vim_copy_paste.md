@@ -1,6 +1,6 @@
 ---
 layout: post
-title: vim粘贴复制命令小结
+title: vim粘贴复制命令
 category: 技术
 tags: vim
 ---
