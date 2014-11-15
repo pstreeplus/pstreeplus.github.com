@@ -1,7 +1,7 @@
 ---
 title: ubuntu无法输入中文的问题
 layout: post
-catagory: 技术
+category: 技术
 tags: 输入法
 ---
 
