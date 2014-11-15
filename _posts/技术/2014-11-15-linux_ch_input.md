@@ -25,4 +25,5 @@ sudo apt-get remove ibus
 
 ####利益相关
 
+
 貌似ubuntu下没有太好的中文输入法，而且搜狗输入法ubuntu下有点屎啊。。。，另外rime比起搜狗么确实挺好用的。
