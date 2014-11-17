@@ -1,7 +1,7 @@
 ---
 title: 后缀数组
 layout: post
-category: 算法
+category: 数据结构
 tags: 字符串
 ---
 
