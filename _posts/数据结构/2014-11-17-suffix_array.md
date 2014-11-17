@@ -45,4 +45,5 @@ struct SuffixArray{
         da(r,sa,n+1,m);
         calHeight(r,sa,n);
     }
+}
 ```
