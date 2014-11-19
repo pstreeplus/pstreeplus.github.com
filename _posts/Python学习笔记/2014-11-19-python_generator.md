@@ -36,10 +36,9 @@ def myGenerator():
 for i in myGenerator():
     print i
 
-#print result:
-#   0
-#   1
-#   2
+#0
+#1
+#2
 ```
 
 如果想要看看for循环里面发生了什么，终端里面直接调用生成看看
@@ -55,7 +54,7 @@ for i in myGenerator():
 >>> 
 ```
 
-并没有执行函数。得到的是个生成器对象，它支持迭代协议，也就是说它具有next方法，可以对它进行迭代直到产生异常
+并没有执行函数。得到的是个生成器对象，它支持迭代协议，也就是说它具有next()方法，可以对它进行迭代直到产生异常
 
 ```python
 #!/usr/bin/env python
@@ -72,7 +71,6 @@ print f.next()
 print f.next()
 print f.next()
 
-# print result:
 # 0
 # 1
 # 2
@@ -81,3 +79,14 @@ print f.next()
 #     print f.next()
 # StopIteration
 ```
+
+
+###for循环工作机制
+
+
+使用for循环来遍历一个对象是时是这样的：
+>如果对象支持迭代协议，那么for循环自动反复调用其next()方法，直到产生异常时循环结束。
+>如果对象不支持迭代协议，那么for循环就会使用索引协议对其进行迭代
+
+
+所以用for对生成器进行迭代时，自动调用next()方法，这就是为什么for和生成器在一起可以工作的原因。
