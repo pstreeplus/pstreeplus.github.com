@@ -41,3 +41,16 @@ for i in myGenerator():
 #   1
 #   2
 ```
+
+如果想要看看for循环里面发生了什么，终端里面直接调用生成看看
+
+```python
+>>> def myGenerator():
+...     for i in range(3):
+...             yield i
+... 
+>>> myGenerator()
+<generator object myGenerator at 0xb741a0cc>
+>>> 
+
+```
