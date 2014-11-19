@@ -46,11 +46,38 @@ for i in myGenerator():
 
 ```python
 >>> def myGenerator():
+        print "foo"
 ...     for i in range(3):
 ...             yield i
 ... 
 >>> myGenerator()
 <generator object myGenerator at 0xb741a0cc>
 >>> 
+```
 
+并没有执行函数。得到的是个生成器对象，它支持迭代协议，也就是说它具有next方法，可以对它进行迭代直到产生异常
+
+```python
+#!/usr/bin/env python
+# -*- coding:utf-8 -*-
+
+def myGenerator():
+    for i in range(3):
+        yield i
+
+f = myGenerator()
+
+print f.next()
+print f.next()
+print f.next()
+print f.next()
+
+# print result:
+# 0
+# 1
+# 2
+# Traceback (most recent call last):
+#   File "1.py", line 13, in <module>
+#     print f.next()
+# StopIteration
 ```
