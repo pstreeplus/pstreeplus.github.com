@@ -24,7 +24,7 @@ tags: Python
 
 
 看下面一段代码：
-```
+```python
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
 
