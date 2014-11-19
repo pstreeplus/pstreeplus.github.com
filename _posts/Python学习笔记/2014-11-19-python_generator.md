@@ -97,6 +97,28 @@ print f.next()
 清楚这一点之后，我们完全利用它自己实现一个可迭代对象，用for遍历，原则就是：**这个对象要有next()方法供for循环调用**。
 
 ```
+#!/usr/bin/env python
+# -*- coding:utf-8 -*-
+
+class myClass:
+    def __iter__(self):
+        self.i = 0
+        return self
+
+    def next(self):
+        if self.i > 3:
+            raise StopIteration
+        self.i += 1
+        return self.i
 
 
+T = myClass()
+
+for i in T:
+    print i
+
+# 1
+# 2
+# 3
+# 4
 ```
