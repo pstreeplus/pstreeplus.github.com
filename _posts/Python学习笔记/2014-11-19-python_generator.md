@@ -22,6 +22,7 @@ tags: Python
 ###实例
 
 
+
 看下面一段代码：
 ```
 #!/usr/bin/env python
