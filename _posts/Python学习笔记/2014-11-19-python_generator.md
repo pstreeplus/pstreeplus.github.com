@@ -1,5 +1,5 @@
 ---
-title: Python生成器
+title: Python Generator(生成器)
 layout: post
 category: 编程语言
 tags: Python
