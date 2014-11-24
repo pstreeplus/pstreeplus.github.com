@@ -1,8 +1,8 @@
 ---
 title: POJ交题程序
 layout: post
-category: 技术
-tags: POJ
+category: 编程语言
+tags: Python
 ---
 
 
