@@ -19,7 +19,7 @@ tags: Python
 
 
 
-```
+```python
 #-*- coding:utf8 -*-
 
 import os
