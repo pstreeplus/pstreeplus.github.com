@@ -1,5 +1,5 @@
 ---
-title: ucai_login
+title: 优才网自动签到
 layout: post
 category: 编程语言
 tags: Python

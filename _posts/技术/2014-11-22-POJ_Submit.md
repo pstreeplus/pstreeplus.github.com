@@ -1,5 +1,5 @@
 ---
-title: POJ交题程序
+title: POJ交题客户端
 layout: post
 category: 编程语言
 tags: Python
@@ -10,6 +10,7 @@ tags: Python
 花了一晚上时间写了个POJ的客户端交题的程序，Python写的，不需要使用浏览器登录，只要在终端输入用户名，密码，题号，源代码文件就行，并自动返回评测结果。感觉还是挺好玩的。
 
 
+已经打包成exe了（放到了github上了），可以在没有Python环境的windows下运行。
 
 
 
