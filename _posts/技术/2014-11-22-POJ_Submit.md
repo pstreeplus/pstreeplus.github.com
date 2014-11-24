@@ -43,8 +43,8 @@ class Poj_Submit_problem:
         self.postdata = {}
         self.postdata['B1'] = 'login'
         self.postdata['url'] = '/'
-        self.postdata['user_id1'] = raw_input("输入用户名：")
-        self.postdata['password1'] = raw_input("输入密码：")
+        self.postdata['user_id1'] = raw_input("username: ")
+        self.postdata['password1'] = raw_input("password: ")
         self.username = self.postdata['user_id1']
         self.postdata = urlencode(self.postdata)
 
@@ -60,8 +60,8 @@ class Poj_Submit_problem:
 
 
     def getStatus(self,proid):
-        time.sleep(0.5)
-        time.sleep(0.5)
+        print "Submiting ..."
+        time.sleep(3.5)
         reqs = urllib2.Request(self.statusturl)
         fd = urllib2.urlopen(reqs)
         htmlcode = fd.read()
@@ -78,9 +78,10 @@ class Poj_Submit_problem:
             self.inputUserInfo()
             self.submit(self.prodate)
         else:
-            print "Submiting ..."
+            print "submited"
+            time.sleep(1.5)
             print "Running && Judging ..."
-            time.sleep(4)
+            time.sleep(1.5)
             htmlcode = htmlcode[r:]
             pos = htmlcode.find('<td>')
             htmlcode = htmlcode[pos+4:]
@@ -102,10 +103,10 @@ class Poj_Submit_problem:
             print "network is not connect"
             exit(0)
         if  postdata == {}:
-            postdata['language'] = 0
+            postdata['language'] = raw_input("language: 0:G++ 1:Gcc 2:Java 3:Pascal 4:C++ 5:C 6:Fortran\nselect: ")
             postdata['submit'] = 'Submit'
-            postdata['problem_id'] = int(raw_input("输入题号："))
-            filename = raw_input("输入源文件名：")
+            postdata['problem_id'] = int(raw_input("problem id: "))
+            filename = raw_input("source file name: ")
             self.prodate = postdata
             code = ""
             try:
@@ -121,7 +122,7 @@ class Poj_Submit_problem:
             urllib2.urlopen(reqs)
             self.getStatus(proid)
         except:
-            print "unknow error"
+            print "submit failed,unknow error"
 
 
 if __name__ == '__main__':
