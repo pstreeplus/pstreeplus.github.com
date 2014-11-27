@@ -1,5 +1,5 @@
 ---
-title: vim_config
+title: 折腾了好久的vim配置
 layout: post
 category: 技术
 tags: vim
