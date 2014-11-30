@@ -6,8 +6,6 @@ markdown: redcarpet
 author: 
   name: wangzhili
   email: wangstdio.h@gmail.com
-  #link: http://painterlin.com
-  #weibo: http://weibo.com/orangeissweet
   github: http://github.com/uglyname
 
 # 站点信息
@@ -45,3 +43,7 @@ locals:
   about: 关于
   newest: 最新文章
   archive: 归档
+
+
+paginate: 5
+paginate_path: "page:num"
