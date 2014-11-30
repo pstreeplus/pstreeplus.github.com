@@ -8,9 +8,9 @@ titlename: 首页
 
 <!-- <center><h3><font color="#000080">终</font><font color="#FFA500">将</font><font color="#2E8B57">一</font><font color="#F08080">无</font><font color="#00CED1">所</font><font color="red"></font><font color="#BA55D3">有</font><font color="#601986">无</font><font color="#556fb5">处</font><font color="#fa1089">安</font><font color="#638c0b">放</font><font color="000080">的</font><font color="2E8B57">青</font><font color="00CED1">春</font></center> -->
 
-<div class="row">
-  <div class="col-md-12">
-    <div class="panel panel-primary">
+<!-- <div class="row"> -->
+<!--   <div class="col-md-12"> -->
+<!--     <div class="panel panel-primary"> -->
       <div class="panel-heading">{{ site.locals.newest }}</div>
       {% for post in paginator.posts %}
         <a  href='{{ post.url }}' class="list-group-item pjaxlink clearfix">
@@ -18,8 +18,8 @@ titlename: 首页
           <span class="badge">{{ post.date | date:"%Y年%m月%d日" }}</span>
         </a>
       {% endfor %}
-    </div>
-  </div>
+    <!-- </div> -->
+  <!-- </div> -->
   {% for cate in site.cates %}
     <div class="col-md-12">
       <div class="panel panel-primary">
