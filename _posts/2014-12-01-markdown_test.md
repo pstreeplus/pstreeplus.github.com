@@ -1,7 +1,8 @@
 ---
 title: markdown_test
 layout: post
-
+category: 技术
+tags: Markdown
 ---
 
 
