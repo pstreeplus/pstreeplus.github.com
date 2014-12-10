@@ -6,8 +6,7 @@ tags: Python
 ---
 
 
-写了个[优才网](http://www.ucai.cn/)的自动签到程序，玩玩，就当Python练手吧。
-
+一个[优才网](http://www.ucai.cn/)的自动签到程序。
 
 ```python
 #!/usr/bin/env python
