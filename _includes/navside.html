@@ -8,7 +8,7 @@
         {% for category in site.categories %}     <!-- 这里是aside1的读书、生活、科研、技术、绘画-->
          <li><a href="#{{ category | first }}" data-toggle="tab">{{ category[0] }}</a></li>
         {% endfor %}
-        <li><a href="#tags" data-toggle="tab">{{ site.locals.tags }}</a></li>  
+        <!--li><a href="#tags" data-toggle="tab">{{ site.locals.tags }}</a></li-->  
         <li><a class="pjaxlink" href="/pages/archive.html">{{ site.locals.archive }}</a></li>
         <!-- <li><a class="pjaxlink" href="/pages/about.html">{{ site.locals.about }}</a></li> -->  
         <!-- <li><a href="#tags" data-toggle="tab"><i class="fa fa-tags fa-lg"></i></a></li>
@@ -45,15 +45,15 @@
                 <div class="panel panel-info">
                   <div class="panel-heading">
                     <h4 class="panel-title">
-                      <!--a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#{{ tag[0] }}">{{ tag[0] }}</a-->
-                      <!--span class="badge pull-right">{{ tag[1].size }}</span-->
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#{{ tag[0] }}">{{ tag[0] }}</a>
+                      <span class="badge pull-right">{{ tag[1].size }}</span>
                     </h4>
                   </div>
                   <div id="{{ tag[0] }}" class="panel-collapse collapse">
                     {% for post in tag[1] %}
-                      <!--a  href='{{ post.url }}' class="list-group-item pjaxlink">
+                      <a  href='{{ post.url }}' class="list-group-item pjaxlink">
                         {{post.title}}
-                      </a-->
+                      </a>
                     {% endfor %}
                   </div>
                 </div>
