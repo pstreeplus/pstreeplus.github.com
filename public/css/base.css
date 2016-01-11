@@ -123,6 +123,7 @@ blockquote p {
 }
 
 
+/*
 a {
     text-decoration: none;
     cursor: crosshair;
@@ -132,8 +133,8 @@ a {
 
 }
 
-
 a:hover {
     background-color: LightGrey;
 
 }
+*/
