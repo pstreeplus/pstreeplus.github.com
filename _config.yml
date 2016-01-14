@@ -47,3 +47,5 @@ locals:
 
 paginate: 20000
 paginate_path: "page:num"
+
+pygments: true
