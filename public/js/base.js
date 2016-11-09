@@ -49,6 +49,9 @@ $(document).ready(function() {
     $(this).data('clicked', !isClicked);
   });
 
+  nav_click(true)
+  $("#nav_btn").data('clicked', false)
+
   $("#content_btn").on('click', function(){
     isClicked = $(this).data('clicked');
 
